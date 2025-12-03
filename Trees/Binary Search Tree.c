@@ -24,6 +24,14 @@ void insertNode(node** root, int value){
         *root = createNode(value);
         return;
     }
+    if (value < (*root)->value){
+        inserNode(&(*root)->left,value);
+    }
+    else if( value > (*root)->value){
+        insertNode(&(*root)->right, value);
+    }
+
+
 
     
 
