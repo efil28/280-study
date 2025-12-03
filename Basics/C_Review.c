@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int main() {
-printf("review");
 
-//check on git to see
+int main() {
+//pointer test
+
+char *p ="Queens";
+printf("%c",*p+6);
     
     return 0;
 }

@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+//Struct
+//Defines a composite type with multiple fields
+struct point{
+    int x;
+    int y;
+};
+
+int main() {
+
+struct point p; // variable of that type
+p.x = 3;// use .
+
+struct point *pp;
+pp->x=3; //use -> of pointer
+
+    return 0;
+}
+
+
+//Typedef
+//Defining typedef
+typedef struct node{
+    int data;
+    struct node *next;
+}node;
+
+node *head;// using typedef allows you to bypass using struct
+
+
+
+//Enum
+//Defines a set of named integer constans and a corresponding type
+enum Color{
+    RED, //0
+    GREEN, //1
+    BLUE //2
+};
+
+//Values increment from 0 unless specified
+
+
+
+
+
+

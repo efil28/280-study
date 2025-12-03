@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C_Review",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${workspaceFolder}/Basics/C_Review.c",
+                "-g",
+                "-o",
+                "${workspaceFolder}/Basics/C_Review"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
